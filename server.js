@@ -10,7 +10,7 @@ app.use(express.static(__dirname + '/dist/codemex_angular'));
 
 app.get('*', function(req,res) {
   // Replace the '/dist/codemex_angular/index.html'
-  res.sendFile(path.join(__dirname + '/dist/codemex_angular/index.html'));
+  res.sendFile(path.join(__dirname + '/dist/codemex_angular/src/index.html'));
 });
 // Start the app by listening on the default Heroku port
 app.listen(process.env.PORT || 8080);
